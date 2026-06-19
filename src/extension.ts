@@ -227,27 +227,18 @@ export function activate(context: vscode.ExtensionContext) {
           {},
         );
 
-        const weakTopicsHTML = weakTopics
-          .map(
-            ([topic, count], index) =>
-              `<li>${index + 1}. ${topic} (${count} solved)</li>`,
-          )
-          .join("");
-
-        const strongTopicsHTML = strongTopics
-          .map(
-            ([topic, count], index) =>
-              `<li>${index + 1}. ${topic} (${count} solved)</li>`,
-          )
-          .join("");
-
         panel.webview.html = getDashboardHTML(
           handle,
+          currentRating,
+          currentRank,
+          targetDivision.name,
+          targetDivision.minRating,
+          targetDivision.maxRating,
           submissions.length,
           acceptedSubmissions.length,
           solvedProblems.size,
-          weakTopicsHTML,
-          strongTopicsHTML
+          weakTopics,
+          strongTopics
         );
 
       } catch (error) {
