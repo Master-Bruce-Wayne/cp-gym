@@ -1,71 +1,94 @@
-# cp-gym README
+# CP Gym
 
-This is the README for your extension "cp-gym". After writing up a brief description, we recommend including the following sections.
+CP Gym is a Visual Studio Code extension for competitive programmers that helps analyze Codeforces profiles and identify areas for improvement.
 
-## Features
-
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+Currently, the extension focuses on topic-wise analysis and highlights a user's strongest and weakest problem-solving areas.
 
 ---
 
-## Following extension guidelines
+## Features
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+### Topic Strength Analysis
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+Enter a Codeforces handle and get:
 
-## Working with Markdown
+* Strong Topics
+* Weak Topics
+* Topic-wise performance insights
+* Quick overview of areas that need improvement
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+### VS Code Integration
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+Access your competitive programming analysis directly inside VS Code without opening a browser.
 
-## For more information
+### Fast and Lightweight
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+Fetches data and displays insights through a clean dashboard inside the editor.
 
-**Enjoy!**
+---
+
+## Usage
+
+1. Open the Command Palette:
+
+   ```text
+   Ctrl + Shift + P
+   ```
+
+2. Run:
+
+   ```text
+   CP Gym: Open Dashboard
+   ```
+
+3. Enter your Codeforces handle.
+
+4. View your:
+
+   * Strong Topics
+   * Weak Topics
+
+---
+
+## Requirements
+
+* Visual Studio Code 1.100.0 or newer
+* Internet connection
+
+---
+
+## Screenshots
+
+*Add screenshots here before publishing.*
+
+```md
+![Dashboard](images/dashboard.png)
+```
+
+---
+
+## Release Notes
+
+### 0.0.1
+
+* Initial release
+* Codeforces handle analysis
+* Strong topic identification
+* Weak topic identification
+* Interactive dashboard inside VS Code
+
+---
+
+## Feedback
+
+GitHub Repository:
+
+https://github.com/Master-Bruce-Wayne/cp-gym
+
+Issues and feature requests are welcome.
+
+---
+
+## License
+
+MIT License
