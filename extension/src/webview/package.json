@@ -1,0 +1,54 @@
+{
+  "name": "cp-gym",
+  "displayName": "CP Gym",
+  "description": "Your ultimate competitive programming analytics gym",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "cp-gym-sidebar",
+          "title": "CP Gym",
+          "icon": "$(graph)"
+        }
+      ]
+    },
+    "views": {
+      "cp-gym-sidebar": [
+        {
+          "id": "cp-gym-controls",
+          "name": "CP GYM: GYM CONTROLS",
+          "icon": "$(gear)"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "cp-gym.openDashboard",
+        "title": "CP Gym: Open Dashboard"
+      },
+      {
+        "command": "cp-gym.switchAccount",
+        "title": "CP Gym: Switch Account"
+      }
+    ]
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.3.3"
+  }
+}
